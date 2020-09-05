@@ -1,6 +1,6 @@
 <template>
   <div class="absolut-wrapper actions-wrapper">
-    <div class="actions">
+    <div class="block-layout actions">
       <h3 class="indents-reset actions__title">Транзакция по счету: {{ actionsData.id }}</h3>
       <div class="actions__lists">
         <div v-for="(action, i) in actionsData.actions" :key="i" class="action__list-wrapper">
@@ -46,10 +46,6 @@ export default {
 .actions {
   position: relative;
   width: 800px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #000000;
 }
 
 .actions__lists {

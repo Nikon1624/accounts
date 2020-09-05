@@ -1,6 +1,6 @@
 <template>
   <ul class="list accounts">
-    <li v-for="account in accountsData" :key="account.id" class="accounts__item">
+    <li v-for="account in accountsData" :key="account.id" class="block-layout accounts__item">
       <h3 @click="showAccountActions(account.id)" class="indents-reset accounts__item-title">Номер счета {{ account.id }}</h3>
       <p class="indents-reset accounts__item-balance">{{ account.balance }}р</p>
       <div class="accounts__item-actions">
@@ -95,10 +95,6 @@ export default {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 15px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .accounts__item-title {

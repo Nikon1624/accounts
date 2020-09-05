@@ -1,6 +1,6 @@
 <template>
   <div class="absolut-wrapper popup-wrapper">
-    <div class="popup">
+    <div class="block-layout popup">
       <h3 class="indents-reset popup__title">{{ popupData.title }}</h3>
       <form @submit.prevent="onSubmit" v-if="popupData.fields" class="popup__form">
         <AppInput v-for="(field, i) in popupData.fields"
@@ -77,10 +77,6 @@ export default {
 .popup {
   position: relative;
   width: 400px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  color: #000000;
 }
 
 .popup__form-element {
